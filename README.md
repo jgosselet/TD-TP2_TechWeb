@@ -11,16 +11,3 @@ Ce projet permet de manipuler des formulaires, des conversions de devises et dif
 
 Le projet montre également comment afficher ou cacher des sections dynamiquement en fonction des choix de l’utilisateur et inclut des images et liens externes.
 
-Structure du dépôt
-
-nom-du-projet/
-│
-├── src/ # Code source (HTML, CSS, JS)
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-│
-├── images/ # Images utilisées dans le projet
-│ └── logo.svg
-│
-├── README.md # Fichier principal d’information
