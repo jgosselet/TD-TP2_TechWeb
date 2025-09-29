@@ -44,17 +44,14 @@ aud.addEventListener('input', updateFromAUD);
 
 updateFromEUR();
 
-// met à jour l'affichage numérique du range (compatible)
 const vol = document.getElementById('volume');
 const out = document.getElementById('rangeOutput');
 out.textContent = vol.value;
 vol.addEventListener('input', ()=> out.textContent = vol.value );
 
-  // 1. Modifier le lien Wikipédia
 const wikiLink = document.querySelector('.wiki-link');
 wikiLink.href = "https://fr.wikipedia.org/";  
 
-// 2. Modifier le placeholder du premier input
 const inputText = document.querySelector('form input[type="text"]');
 const btn = document.querySelector('button');
 
@@ -161,3 +158,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (progressValue >= 100) clearInterval(interval);
   }, 1000); 
 });
+
