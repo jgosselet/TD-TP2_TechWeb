@@ -1,124 +1,101 @@
-   body{
-    font-family: "Times New Roman", Times, serif;
-    background: #ffffff;
-    padding: 20px;
-    color: #111;
-  }
+body{
+    font-family: "Times New Roman", Times, serif; /* Police générale du site */
+    background: #ffffff; /* Fond blanc */
+    padding: 20px; /* Espace autour du contenu */
+    color: #111; /* Couleur du texte principale */
+}
 
-  .card {
-    width: 400px;              
-    border: 2px solid #2b6fb7;  
-    padding: 12px;
-    box-sizing: border-box;
-    margin: 10px;
-  }
+.card {
+    width: 400px;              /* Largeur de la "carte" */
+    border: 2px solid #2b6fb7; /* Bord bleu autour de la carte */
+    padding: 12px;              /* Espace intérieur de la carte */
+    box-sizing: border-box;     /* Le padding compte dans la largeur totale */
+    margin: 10px;               /* Espace extérieur autour de la carte */
+}
 
-  h1 {
-    font-size: 20px;
-    margin: 0 0 8px 0;
-    font-weight: bold;
-  }
+h1 {
+    font-size: 20px;  /* Taille du titre */
+    margin: 0 0 8px 0; /* Marge en bas pour espacer du contenu suivant */
+    font-weight: bold; /* Titre en gras */
+}
 
-  
-  .wiki-link{
-    display:inline-block;
-    margin-bottom:10px;
-    color: #5b2fa8;             
-    font-size: 13px;
-    text-decoration: underline;
-  }
+.wiki-link{
+    color: #5b2fa8;         /* Couleur du lien */
+    text-decoration: underline; /* Souligné */
+    font-size: 13px; 
+    display:inline-block; 
+    margin-bottom:10px;      /* Espace sous le lien */
+}
 
- 
-  .logo-wrap{
-    padding: 6px 0;
-  }
+.logo-wrap{
+    padding: 6px 0; /* Espace autour du logo */
+}
 
-  .divider{
-    border-top:1px solid #999;
+.divider{
+    border-top:1px solid #999; /* Ligne horizontale séparatrice */
     margin: 8px 0;
-  }
+}
 
- 
-  .section-title{
-    font-size: 18px;
-    font-weight: bold;
-    margin: 8px 0 6px 0;
-  }
+.section-title{
+    font-size: 18px; 
+    font-weight: bold; 
+    margin: 8px 0 6px 0; /* Titre de section, plus petit que h1 */
+}
 
-  form input[type="text"],
-  form input[type="password"],
-  form input[type="date"]{
-    font-family: inherit;
-    font-size: 12px;
-    border: 1px solid #999;
-    width: 170px;
-    display:block;
-    margin-bottom:8px;
-  }
+form input[type="text"],
+form input[type="password"],
+form input[type="date"]{
+    font-size: 12px; 
+    border: 1px solid #999; /* Bord des champs de formulaire */
+    width: 170px; 
+    display:block; 
+    margin-bottom:8px; /* Espacement vertical entre les champs */
+}
 
-  .radios { margin: 6px 0 8px 0; font-size: 13px; }
-  .small-label{ font-size:13px; display:block; margin-bottom:6px; }
+.radios { 
+    margin: 6px 0 8px 0; 
+    font-size: 13px; /* Style pour les boutons radio */
+}
 
-  
-  .range-row{ display:flex; align-items:center; gap:8px; margin-bottom:8px; }
-  .range-row input[type="range"]{ width:130px; }
-  .range-val{ width:24px; text-align:left; font-size:12px; }
+.range-row{ 
+    display:flex; 
+    align-items:center; 
+    gap:8px; /* Ligne avec curseur et valeur à côté */
+    margin-bottom:8px; 
+}
 
- 
-  .inline { display:flex; align-items:center; gap:6px; margin-bottom:8px; }
+button{
+    padding:4px 10px; /* Taille du bouton */
+    font-size:13px; 
+    border:1px solid #666; 
+    background:#eee; 
+    cursor:pointer; /* Curseur change pour montrer que c'est cliquable */
+}
 
-
-  button{
-    padding:4px 10px;
-    font-size:13px;
-    border:1px solid #666;
-    background:#eee;
-    cursor:pointer;
-  }
-
-  
-  .progress-block{
+.progress-block{
     margin-top:10px;
-    border-top:1px solid #999;
+    border-top:1px solid #999; /* Zone avec barres de progression */
     padding-top:8px;
-  }
+}
 
-  .progress-label{ font-size:13px; margin-bottom:4px; }
-
- 
-  progress {
+progress {
     width: 125px;
-    height: 12px;
-    -webkit-appearance: none;
-    appearance: none;
-    vertical-align: middle;
-    margin-left:6px;
-    border-radius: 15px;
-  }
-  progress::-webkit-progress-bar{
-    background: #e6e6e6;
-    border-radius:6px;
-  }
-  progress::-webkit-progress-value{
-    background: #2b7bd3; 
-    border-radius:6px;
-  }
-  progress.green::-webkit-progress-value{
-    background: #2ba84a; 
-  }
-  
-  progress::-moz-progress-bar{ background: #2b7bd3; }
-  progress.green::-moz-progress-bar{ background: #2ba84a; }
+    height: 12px; 
+    border-radius: 15px; /* Barres arrondies */
+}
 
- 
-  .row{
+.progress.green::-webkit-progress-value{
+    background: #2ba84a; /* Barre verte pour indiquer un autre type de progression */
+}
+
+.row{
    display:flex; 
    align-items:center; 
-   gap:6px; 
+   gap:6px; /* Petites lignes de formulaire alignées horizontalement */
    font-size:13px; 
    margin-bottom:6px; 
-  }
+}
 
-  .row .label { 
-   width: 120px; 
-  }
+.row .label { 
+   width: 120px; /* Largeur fixe pour étiquettes dans les lignes */
+}
