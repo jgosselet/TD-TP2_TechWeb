@@ -1,0 +1,117 @@
+ /* Page */
+  body{
+    font-family: "Times New Roman", Times, serif;
+    background: #ffffff;
+    padding: 20px;
+    color: #111;
+  }
+
+  /* Conteneur principal */
+  .card {
+    width: 400px;               /* largeur proche de la capture */
+    border: 2px solid #2b6fb7;  /* bordure bleutée */
+    padding: 12px;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+  }
+
+  /* petit lien violet */
+  .wiki-link{
+    display:inline-block;
+    margin-bottom:10px;
+    color: #5b2fa8;             /* violet */
+    font-size: 13px;
+    text-decoration: underline;
+  }
+
+  /* zone image / séparation */
+  .logo-wrap{
+    padding: 6px 0;
+  }
+
+  .divider{
+    border-top:1px solid #999;
+    margin: 8px 0;
+  }
+
+  /* Section "Des éléments !" */
+  .section-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0 6px 0;
+  }
+
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="date"]{
+    font-family: inherit;
+    font-size: 12px;
+    border: 1px solid #999;
+    width: 170px;
+    display:block;
+    margin-bottom:8px;
+  }
+
+  .radios { margin: 6px 0 8px 0; font-size: 13px; }
+  .small-label{ font-size:13px; display:block; margin-bottom:6px; }
+
+  /* range + value */
+  .range-row{ display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+  .range-row input[type="range"]{ width:130px; }
+  .range-val{ width:24px; text-align:left; font-size:12px; }
+
+  /* checkbox inline */
+  .inline { display:flex; align-items:center; gap:6px; margin-bottom:8px; }
+
+  /* bouton ok */
+  button{
+    padding:4px 10px;
+    font-size:13px;
+    border:1px solid #666;
+    background:#eee;
+    cursor:pointer;
+  }
+
+  /* footer with progress bars */
+  .progress-block{
+    margin-top:10px;
+    border-top:1px solid #999;
+    padding-top:8px;
+  }
+
+  .progress-label{ font-size:13px; margin-bottom:4px; }
+
+  /* style native progress colors (webkit and firefox) */
+  progress {
+    width: 125px;
+    height: 12px;
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    margin-left:6px;
+    border-radius: 15px;
+  }
+  progress::-webkit-progress-bar{
+    background: #e6e6e6;
+    border-radius:6px;
+  }
+  progress::-webkit-progress-value{
+    background: #2b7bd3; /* bleu */
+    border-radius:6px;
+  }
+  progress.green::-webkit-progress-value{
+    background: #2ba84a; /* vert */
+  }
+  /* Firefox */
+  progress::-moz-progress-bar{ background: #2b7bd3; }
+  progress.green::-moz-progress-bar{ background: #2ba84a; }
+
+  /* petite mise en page des lignes du bas */
+  .row{ display:flex; align-items:center; gap:6px; font-size:13px; margin-bottom:6px; }
+  .row .label { width: 120px; }
